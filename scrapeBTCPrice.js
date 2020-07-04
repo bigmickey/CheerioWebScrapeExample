@@ -14,50 +14,8 @@ request({
 
   console.log(title.text());
 
-  const links = [];
-
-//  let allLinks = $('a');
-
-//  allLinks.each((index, element) => {
-//    links.push($(element));
-//  });
-
-
-//  links.forEach(e => {
-//    console.log("title is " + e.attr('title'));
-//    console.log("name is " + e.attr('name'));
-//    console.log("href is " + e.attr('href'));
-//  });
-
-// trying to use find to pick out hyperlink with title = Bitcoin
-
-
-//  $('a').each(function(i, element) {
-//    if ( $(this).attr('title') == 'Bitcoin' ) {
-//      console.log("title is " + $(this).attr('title'));
-//      console.log("name is " + $(this).attr('name'));
-//      console.log("href is " + $(this).attr('href'));
-//      console.log($(this));
-////      console.log($(this).find('span').attr('class'));
-//    }
-//  });
-
-//  $('.price').each(function(i, element) {
-//    if( $(this).parent().attr(title) == 'Bitcoin' ) {
-//      console.log($(this).text());
-//    }
-//    console.log($(this).parent().parent().attr(title));
-//    console.log($(this));
-//  });
-
-//  const firstPrice = $('.price')[0];
-//  console.log("first price is .. ");
-//  console.log($(firstPrice));
-
-//  console.log("firstPrice's parent is ..");
-//  console.log($(firstPrice).parent());
-
-
+  const allLinks = $("a");
+  console.log("number of links in DOM = " + allLinks.length);
   const bitcoinPriceLink = $("a[title='Bitcoin']");
   console.log("title is " + $(bitcoinPriceLink).attr('title'));
 
